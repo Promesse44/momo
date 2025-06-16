@@ -38,7 +38,7 @@ creating first API end point to load data from xml file,
 cleaning,categorizing an storing processed data to db and unproccesed to log file
 */
 
-app.get('/', async (req, res) => {
+app.get('/load-data', async (req, res) => {
   try {
     //retrieving data from xml file
     const xmlData = await fs.readFile('modified_sms_v2.xml', 'utf8');
